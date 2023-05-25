@@ -1,0 +1,19 @@
+@mixin row() {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@mixin small-container(){
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+@mixin col-2(){
+    flex-basis: 50%;
+    min-width: 300px;
+
+}

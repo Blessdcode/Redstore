@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    .logo {}
+
+    nav {
+        flex: 1;
+        text-align: right;
+
+        ul {
+            display: inline-block;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 20px;
+
+                a {
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        width: 0;
+                        height: 2px;
+                        background-color: $primary;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        transition: .3s ease-in-out;
+                    }
+
+                    &.active,
+                    &:hover::after {
+                        width: 80%;
+                    }
+
+                    &.active,
+                    &:hover {
+                        width: 80%;
+                        height: 2px;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

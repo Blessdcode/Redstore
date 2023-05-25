@@ -1,0 +1,14 @@
+.brands {
+  margin: 100px auto;
+}
+.brands .small-container .row .col-5 {
+  width: 100px;
+}
+.brands .small-container .row .col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.brands .small-container .row .col-5 img:hover {
+  filter: grayscale(0);
+}

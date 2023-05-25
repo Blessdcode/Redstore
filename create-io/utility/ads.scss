@@ -1,0 +1,27 @@
+.brands {
+    margin: 100px auto;
+
+    .small-container {
+        // @include small-container();
+
+
+        .row {
+            // @include row();
+
+            .col-5 {
+                width: 100px;
+
+                & img {
+                    width: 100%;
+                    cursor: pointer;
+                    filter: grayscale(100%);
+
+                    &:hover {
+                        filter: grayscale(0);
+
+                    }
+                }
+            }
+        }
+    }
+}

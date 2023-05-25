@@ -1,0 +1,109 @@
+.small-container {
+    @include small-container();
+
+    .title {
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: $light-dark;
+
+        &::after {
+            content: '';
+            background: $primary;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .row {
+        @include row();
+
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                // transform: translateY(-5px);
+
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .to-cart {
+                position: relative;
+                overflow: hidden;
+                a {
+                    img {}
+                }
+                .value{
+                    position: absolute;
+                    bottom: -30%;
+                    background-color: $primary;
+                    color: $white;
+                    padding: 18px 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 24px;
+                    width: 100%;
+                    height: 30px;
+                    font-size: 18px;
+                    opacity: .9;
+                    overflow: hidden;
+                    transition: bottom .5s ease-in-out;
+
+                    i{
+                        font-size: 14px;
+                    }
+
+                    .increase{
+                        cursor: pointer;
+                    }
+
+                    .decrease{
+                        cursor: pointer;
+                    }
+
+                    .cart{
+                        cursor: pointer;
+                    }
+                }
+                &:hover .value{
+                    bottom: 0;
+                }
+            }
+
+            h4 {
+                color: $light-dark;
+                font-weight: normal;
+            }
+
+            .rating {
+
+                i {
+
+                    color: $primary;
+
+                    .fa {}
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products-RedStore-Ecommerce</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.gogleapis.com/css2?
+    family=poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/
+    4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-
+    scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" width="125px"></a>
+
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!-- contact-section starts-->
+
+    <div class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">Get in Touch</h2>
+            <div class="row">
+                <div class="contact-right">
+                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+                        novalidate="novalidate">
+                        <div class="row-2">
+                            <div class="form-group">
+                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+                                    placeholder=" Name"></textarea>
+                            </div>
+                            <div class="input">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="subject" id="subject" type="text"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
+                                    placeholder="Enter Subject">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn button-contactForm boxed-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-left">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <div class="media-body">
+                            <h3>Buttonwood, California.</h3>
+                            <p>Rosemead, CA 91770</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><ion-icon name="tablet-portrait-outline"></ion-icon></i></span>
+                        <div class="media-body">
+                            <h3>+1 253 565 2365</h3>
+                            <p>Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <div class="media-body">
+                            <h3>support@nonprofit.com</h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-------footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Dowload Our App</h3>
+
+                    <p>Download App for Andriod and ios mobile phone</p>
+                    <div class="app-logo">
+                        <a href="play.google.com"> <img src="images/play-store.png"></a>
+                        <a href="apple.com"> <img src="images/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html"> <img src="images/logo-white.png"></a>
+                    <p>Our purpose is to sustainably make the pleasure and
+                        benefits of sports accessible to many. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <Ul>
+                        <li>Coupons</li>
+                        <li>Blog Post </li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </Ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <Ul>
+                        <a href="twitter.com">
+                            <li>Twitter</li>
+                        </a>
+                        <a href="facebook.com">
+                            <li>Facebook </li>
+                        </a>
+                        <a href="instagram">
+                            <li>Instagram</li>
+                        </a>
+                        <a href="youtube.com">
+                            <li>YouTube</li>
+                        </a>
+                    </Ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 </p>
+        </div>
+    </div>
+
+
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
