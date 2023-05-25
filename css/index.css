@@ -703,6 +703,9 @@ form a {
 .testimonal .small-container .row-1 .col-3 i {
   color: #555;
 }
+.testimonal .small-container .row-1 .col-3 .rating i {
+  color: #ff523b;
+}
 .testimonal .small-container .row-1 .col-3 img {
   width: 50px;
   margin-top: 20px;
