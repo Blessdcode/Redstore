@@ -1,0 +1,46 @@
+.single-product {
+    margin-top: 80px;
+
+    .col-2 {
+        padding: 20;
+
+        img {
+            padding: 0;
+        }
+
+        h4 {
+            margin: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        select {
+            display: block;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 20px;
+            margin-right: 10px;
+            border: 1px solid $primary;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .small-img-row {
+            display: flex;
+            justify-content: space-between;
+
+            .small-img-col {
+                flex-basis: 24%;
+                cursor: pointer;
+            }
+        }
+    }
+}
