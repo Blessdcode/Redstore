@@ -21,7 +21,7 @@
         }
     }
 
-    .row {
+    .Featured-container {
         @include row();
 
         .col-4 {
@@ -45,12 +45,14 @@
             .to-cart {
                 position: relative;
                 overflow: hidden;
+
                 a {
                     img {}
                 }
-                .value{
+
+                .value {
                     position: absolute;
-                    bottom: -30%;
+                    top: -40%;
                     background-color: $primary;
                     color: $white;
                     padding: 18px 12px;
@@ -65,30 +67,41 @@
                     overflow: hidden;
                     transition: bottom .5s ease-in-out;
 
-                    i{
+                    i {
                         font-size: 14px;
+                        position: relative;
+
+                        &::after {
+                            content: "Add to cart";
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            margin-left: 10px;
+                        }
                     }
 
-                    .increase{
+                    .increase {
                         cursor: pointer;
+                        display: none;
                     }
 
-                    .decrease{
+                    .decrease {
                         cursor: pointer;
+                        display: none;
                     }
 
-                    .cart{
-                        cursor: pointer;
-                    }
+
                 }
-                &:hover .value{
-                    bottom: 0;
+
+                &:hover .value {
+                    top: 50%;
                 }
             }
-
+            .nameRating{
+                display: flex;
+            
             h4 {
                 color: $light-dark;
-                font-weight: normal;
+                font-weight: bold;
             }
 
             .rating {
@@ -100,9 +113,33 @@
                     .fa {}
                 }
             }
+            }
 
-            p {
-                font-size: 14px;
+            .priceBtn {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: $nav-color;
+                }
+
+                .cart {
+                    padding: 7px 8px;
+                    border: none;
+                    outline: none;
+                    color: $white;
+                    border-radius: 12px;
+                    background-color: $primary;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $white;
+                        color: $primary;
+                        transition: 1s ease;
+                    }
+                }
             }
         }
     }

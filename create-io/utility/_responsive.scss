@@ -27,6 +27,10 @@
         }
     }
 
+    .header .row .col-2 img {
+        display: none;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -55,8 +59,11 @@
 .row,
 .row-2 {
     justify-content: space-between;
-    margin: 70px auto 40px;
+    margin: 40px auto 20px;
 }
+
+
+
 
 select {
     border: 1px solid #ff523b;
@@ -89,55 +96,6 @@ select:focus {
 
 
 
-
-/*------cart-page-----*/
-
-.cart-page {
-}
-
-table {
-   
-}
-
-.cart-info {
-   
-}
-
-th {
-   
-}
-
-td {
-}
-
-td input {
-   
-}
-
-td a {
-   
-}
-
-td img {
-   
-}
-
-.total-price {
-   
-}
-
-.total-price table {
-   
-}
-
-td:last-child {
-   
-
-}
-
-th:last-child {
-    text-align: right;
-}
 
 
 /*------account-page------*/

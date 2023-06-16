@@ -2,7 +2,7 @@
     margin: 70px 0;
 
     .small-container {
-       @include small-container();
+        @include small-container();
 
         .row {
             @include row();
@@ -23,5 +23,46 @@
                 }
             }
         }
+   
     }
+}
+
+
+
+.testimonal {
+    // border: 5px solid $primary;
+    width: 80vw;
+    margin: 0 auto;
+    height: 70vh;
+    max-width: 50rem;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    // margin-top: 4rem;
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        // margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%);
+        transition: all 0.25s ease-in-out;
+        // height: 100%;
+
+        p {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
 }

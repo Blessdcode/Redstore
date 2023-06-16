@@ -94,6 +94,35 @@ body {
   width: 100%;
 }
 
+.testimonal {
+  width: 80vw;
+  margin: 0 auto;
+  height: 70vh;
+  max-width: 50rem;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.testimonal .slide {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.25s ease-in-out;
+}
+.testimonal .slide p {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
 .footer {
   background: #000;
   color: #8a8a8a;
@@ -153,6 +182,7 @@ body {
 
 .header {
   background: radial-gradient(#fff, #ffd6d6);
+  height: 100vh;
 }
 .header .row {
   display: flex;
@@ -178,7 +208,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 30px 20px;
 }
 .navbar nav {
   flex: 1;
@@ -238,13 +268,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.small-container .row {
+.small-container .Featured-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.small-container .row .col-4 {
+.small-container .Featured-container .col-4 {
   flex-basis: 25%;
   padding: 10px;
   min-width: 200px;
@@ -253,16 +283,16 @@ body {
   position: relative;
   overflow: hidden;
 }
-.small-container .row .col-4 img {
+.small-container .Featured-container .col-4 img {
   width: 100%;
 }
-.small-container .row .col-4 .to-cart {
+.small-container .Featured-container .col-4 .to-cart {
   position: relative;
   overflow: hidden;
 }
-.small-container .row .col-4 .to-cart .value {
+.small-container .Featured-container .col-4 .to-cart .value {
   position: absolute;
-  bottom: -30%;
+  top: -40%;
   background-color: #ff523b;
   color: #fff;
   padding: 18px 12px;
@@ -277,30 +307,59 @@ body {
   overflow: hidden;
   transition: bottom 0.5s ease-in-out;
 }
-.small-container .row .col-4 .to-cart .value i {
+.small-container .Featured-container .col-4 .to-cart .value i {
   font-size: 14px;
+  position: relative;
 }
-.small-container .row .col-4 .to-cart .value .increase {
+.small-container .Featured-container .col-4 .to-cart .value i::after {
+  content: "Add to cart";
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+.small-container .Featured-container .col-4 .to-cart .value .increase {
   cursor: pointer;
+  display: none;
 }
-.small-container .row .col-4 .to-cart .value .decrease {
+.small-container .Featured-container .col-4 .to-cart .value .decrease {
   cursor: pointer;
+  display: none;
 }
-.small-container .row .col-4 .to-cart .value .cart {
-  cursor: pointer;
+.small-container .Featured-container .col-4 .to-cart:hover .value {
+  top: 50%;
 }
-.small-container .row .col-4 .to-cart:hover .value {
-  bottom: 0;
+.small-container .Featured-container .col-4 .nameRating {
+  display: flex;
 }
-.small-container .row .col-4 h4 {
+.small-container .Featured-container .col-4 .nameRating h4 {
   color: #555;
-  font-weight: normal;
+  font-weight: bold;
 }
-.small-container .row .col-4 .rating i {
+.small-container .Featured-container .col-4 .nameRating .rating i {
   color: #ff523b;
 }
-.small-container .row .col-4 p {
-  font-size: 14px;
+.small-container .Featured-container .col-4 .priceBtn {
+  display: flex;
+  justify-content: space-between;
+}
+.small-container .Featured-container .col-4 .priceBtn p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+.small-container .Featured-container .col-4 .priceBtn .cart {
+  padding: 7px 8px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #ff523b;
+  cursor: pointer;
+}
+.small-container .Featured-container .col-4 .priceBtn .cart:hover {
+  background-color: #fff;
+  color: #ff523b;
+  transition: 1s ease;
 }
 
 .brands {
@@ -339,6 +398,9 @@ body {
   nav ul li a {
     color: white;
   }
+  .header .row .col-2 img {
+    display: none;
+  }
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -358,7 +420,7 @@ body {
 .row,
 .row-2 {
   justify-content: space-between;
-  margin: 70px auto 40px;
+  margin: 40px auto 20px;
 }
 
 select {
@@ -388,11 +450,6 @@ select:focus {
 .page-btn span:hover {
   background: #ff523b;
   color: white;
-}
-
-/*------cart-page-----*/
-th:last-child {
-  text-align: right;
 }
 
 /*------account-page------*/
@@ -615,10 +672,6 @@ form a {
   color: #555;
   font-size: 16px;
 }
-.testimonal .small-container .row-1 .col-3:hover {
-  transform: translateY(-10px);
-}
-
 .single-product {
   margin-top: 80px;
 }
@@ -695,7 +748,7 @@ form a {
   font-size: 12px;
 }
 .cart-page td input {
-  width: 40px;
+  width: 60px;
   height: 30px;
   padding: 5px;
 }
